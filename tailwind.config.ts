@@ -10,6 +10,18 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
+        caption: [
+          "10px",
+          {
+            lineHeight: "18px",
+          },
+        ],
+        xs: [
+          "12px",
+          {
+            lineHeight: "18px",
+          },
+        ],
         sm: [
           "14px",
           {
