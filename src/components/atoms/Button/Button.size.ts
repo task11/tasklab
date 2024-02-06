@@ -1,6 +1,5 @@
 export const SIZES = {
-  sm: `w-52 h-12`,
-  md: `w-64 h-12`,
-  lg: `w-72 h-12`,
-  full: `w-full h-12`,
+  sm: `w-80px h-28px text-xs font-bold`,
+  md: `w-300px h-48px text-lg`,
+  lg: `w-327px h-48px text-lg`,
 };

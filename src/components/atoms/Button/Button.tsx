@@ -2,8 +2,15 @@ import { SIZES } from "./Button.size";
 import { VARIANTS } from "./Button.variant";
 
 type Props = {
-  size?: "sm" | "md" | "lg" | "full";
-  variant?: "default" | "accent" | "error" | "warning";
+  size?: "sm" | "md" | "lg";
+  variant?:
+    | "default"
+    | "primary"
+    | "accent"
+    | "kakao"
+    | "google"
+    | "facebook"
+    | "github";
   label: string;
   name?: string;
   onClick?: () => void;
@@ -24,7 +31,7 @@ export default function Button({
     <button
       type="button"
       name={name}
-      className={`${sizeStyle} ${variantStyle} text-lg font-bold rounded-lg disabled:opacity-50`}
+      className={`${sizeStyle} ${variantStyle} rounded-lg disabled:opacity-50`}
       {...rest}
     >
       {label}
