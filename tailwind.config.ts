@@ -48,11 +48,13 @@ const config: Config = {
         "60px": "60px",
         "80px": "80px",
         "120px": "120px",
+        "185px": "185px",
         "280px": "280px",
         "300px": "300px",
         "327px": "327px",
       },
       height: {
+        "1px": "1px",
         "28px": "28px",
         "32px": "32px",
         "36px": "36px",
@@ -62,6 +64,9 @@ const config: Config = {
         "60px": "60px",
         "80px": "80px",
         "100px": "100px",
+      },
+      inset: {
+        "1/2": "50%",
       },
       colors: {
         primary_100: "#12B886",
@@ -75,6 +80,7 @@ const config: Config = {
         g400: "#BCBCBC",
         g300: "#E4E4E4",
         g200: "#EFEFEF",
+        g100: "#F5F5F5",
         kakao: "#FEE500",
         google: "#F4F4F4",
         facebook: "#1877F2",
