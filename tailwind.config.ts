@@ -64,6 +64,7 @@ const config: Config = {
         "60px": "60px",
         "80px": "80px",
         "100px": "100px",
+        "635px": "635px",
       },
       inset: {
         "1/2": "50%",
