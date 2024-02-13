@@ -21,6 +21,7 @@ export const Default: Story = {
   args: {
     variant: "default",
     label: "Button",
+    disabled: false,
   },
 };
 
@@ -31,16 +32,37 @@ export const Accent: Story = {
   },
 };
 
-export const Warning: Story = {
+export const Primary: Story = {
   args: {
-    variant: "warning",
+    variant: "primary",
     label: "Button",
   },
 };
 
-export const Error: Story = {
+export const Kakao: Story = {
   args: {
-    variant: "error",
+    variant: "kakao",
+    label: "Button",
+  },
+};
+
+export const Facebook: Story = {
+  args: {
+    variant: "facebook",
+    label: "Button",
+  },
+};
+
+export const Google: Story = {
+  args: {
+    variant: "google",
+    label: "Button",
+  },
+};
+
+export const Github: Story = {
+  args: {
+    variant: "github",
     label: "Button",
   },
 };
@@ -69,6 +91,7 @@ export const Large: Story = {
 export const Disabled: Story = {
   args: {
     label: "Button",
+    variant: "primary",
     disabled: true,
   },
 };
