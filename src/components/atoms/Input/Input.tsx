@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import { SIZES } from "./Input.size";
 
 export interface InputProps {
   type?: InputTypeProps;
@@ -33,7 +34,7 @@ export type InputValidationProps = "default" | "success" | "error";
 
 type InputTypeProps = "text" | "password" | "email" | "search";
 
-type InputSizeProps = "sm" | "md" | "lg" | "full";
+type InputSizeProps = "sm" | "md" | "lg";
 
 export type UserInputPramProps = {
   value: string;
@@ -55,19 +56,21 @@ export default forwardRef<HTMLInputElement, InputProps>(function Input(
   },
   ref
 ) {
+  const sizeStyle = SIZES[size];
   return (
-    <div className=" relative flex flex-col gap-2">
+    <div className="relative flex flex-col gap-2">
       {isLabelVisible && (
         <label
           htmlFor={name}
-          className=" absolute left-2 -top-3 z-50 bg-white flex items-center gap-1 text-caption"
+          className=" absolute left-2 -top-2 z-50 bg-white flex items-center gap-1 text-caption pl-2 pr-2"
         >
           {label}
-          {isRequired && `*`}
+          {isRequired && <span className=" text-red-600">*</span>}
         </label>
       )}
       <div>
         <input
+          className={`${sizeStyle} border rounded-lg p-3 outline-primary_100`}
           ref={ref}
           id={name}
           name={name}
