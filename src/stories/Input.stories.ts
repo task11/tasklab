@@ -22,6 +22,8 @@ export const Default: Story = {
     name: "username",
     label: "목표 작성",
     value: "",
+    isRequired: false,
+    validation: "default",
     isLabelVisible: true,
     placeholder: "test",
   },

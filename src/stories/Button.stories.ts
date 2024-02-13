@@ -21,6 +21,7 @@ export const Default: Story = {
   args: {
     variant: "default",
     label: "Button",
+    disabled: false,
   },
 };
 
