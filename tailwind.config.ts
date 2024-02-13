@@ -45,6 +45,7 @@ const config: Config = {
         "12px": "12px",
         "20px": "20px",
         "36px": "36px",
+        "42px": "42px",
         "60px": "60px",
         "80px": "80px",
         "120px": "120px",
@@ -55,6 +56,7 @@ const config: Config = {
       },
       height: {
         "1px": "1px",
+        "22px": "22px",
         "28px": "28px",
         "32px": "32px",
         "36px": "36px",
@@ -65,6 +67,9 @@ const config: Config = {
         "80px": "80px",
         "100px": "100px",
         "635px": "635px",
+      },
+      borderRadius: {
+        lg: "42px",
       },
       inset: {
         "1/2": "50%",
