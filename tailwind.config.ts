@@ -69,7 +69,7 @@ const config: Config = {
         "635px": "635px",
       },
       borderRadius: {
-        lg: "42px",
+        xxlg: "42px",
       },
       inset: {
         "1/2": "50%",
