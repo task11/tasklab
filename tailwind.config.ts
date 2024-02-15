@@ -53,6 +53,7 @@ const config: Config = {
         "280px": "280px",
         "300px": "300px",
         "327px": "327px",
+        "768px": "768px",
       },
       height: {
         "1px": "1px",
