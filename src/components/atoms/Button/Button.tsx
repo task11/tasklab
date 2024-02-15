@@ -11,7 +11,7 @@ type Props = {
     | "google"
     | "facebook"
     | "github";
-  label: string;
+  children: React.ReactNode;
   name?: string;
   onClick?: () => void;
   disabled?: boolean;
@@ -20,7 +20,7 @@ type Props = {
 export default function Button({
   size = "md",
   variant = "default",
-  label,
+  children,
   name = "",
   ...rest
 }: Props) {
@@ -34,7 +34,7 @@ export default function Button({
       className={`${sizeStyle} ${variantStyle} rounded-lg disabled:opacity-50`}
       {...rest}
     >
-      {label}
+      {children}
     </button>
   );
 }
