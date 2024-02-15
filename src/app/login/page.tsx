@@ -1,3 +1,5 @@
+import Template from "@/components/templates";
+
 export default function page() {
-  return <div>page</div>;
+  return <Template.Login />;
 }
