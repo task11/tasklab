@@ -9,9 +9,6 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  argTypes: {
-    label: { control: "name" },
-  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -20,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     variant: "default",
-    label: "Button",
+    children: "Button",
     disabled: false,
   },
 };
@@ -28,69 +25,69 @@ export const Default: Story = {
 export const Accent: Story = {
   args: {
     variant: "accent",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Primary: Story = {
   args: {
     variant: "primary",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Kakao: Story = {
   args: {
     variant: "kakao",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Facebook: Story = {
   args: {
     variant: "facebook",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Google: Story = {
   args: {
     variant: "google",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Github: Story = {
   args: {
     variant: "github",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Small: Story = {
   args: {
     size: "sm",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Medium: Story = {
   args: {
     size: "md",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Large: Story = {
   args: {
     size: "lg",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Disabled: Story = {
   args: {
-    label: "Button",
+    children: "Button",
     variant: "primary",
     disabled: true,
   },
