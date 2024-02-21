@@ -1,6 +1,6 @@
 "use client";
 
-import WithAuth from "@/utils/auth/withAuth";
+import WithAuth from "@/utils/auth/WithAuth";
 
 function Home() {
   return (
