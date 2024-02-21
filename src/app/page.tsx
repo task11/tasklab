@@ -1,4 +1,8 @@
-export default function Home() {
+"use client";
+
+import WithAuth from "@/utils/auth/withAuth";
+
+function Home() {
   return (
     <div className=" flex-row justify-center gap-6">
       <span className=" ">메인</span>
@@ -6,3 +10,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default WithAuth(Home);
