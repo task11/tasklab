@@ -1,5 +1,10 @@
-import Template from "@/components/templates";
+"use client";
 
-export default function page() {
+import Template from "@/components/templates";
+import WithoutAuth from "@/utils/auth/WithoutAuth";
+
+function page() {
   return <Template.Login />;
 }
+
+export default WithoutAuth(page);
