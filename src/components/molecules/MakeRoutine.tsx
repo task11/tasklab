@@ -1,9 +1,9 @@
-import PlusButton from "../../../public/assets/svgs/PlusButton.svg";
+import Atom from "../atoms";
 
-interface Props {
-  onClick: () => void;
-}
-
-export default function MakeRoutine({ onClick }: Props) {
-  return <PlusButton onClick={onClick} />;
+export default function MakeRoutine() {
+  return (
+    <Atom.Card variant="skeleton">
+      <div>추가</div>
+    </Atom.Card>
+  );
 }

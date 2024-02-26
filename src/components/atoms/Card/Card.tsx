@@ -1,7 +1,7 @@
 import { VARIANTS } from "./Card.variant";
 
 interface Props {
-  variant: "default" | "disabled";
+  variant: "default" | "disabled" | "skeleton";
   children: React.ReactNode;
 }
 
