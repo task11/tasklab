@@ -2,7 +2,7 @@ import { SIZES } from "./HorizontalLine.size";
 import { VARIANTS } from "./HorizontalLine.variant";
 
 interface Props {
-  size: "md" | "lg";
+  size: "md" | "lg" | "full" | "half";
   variant: "default" | "accent" | "disabled";
 }
 

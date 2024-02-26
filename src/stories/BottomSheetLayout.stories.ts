@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import BottomSheet from "../components/atoms/BottomSheet/BottomSheet";
+import BottomSheetLayout from "../components/atoms/BottomSheetLayout/BottomSheetLayout";
 
 const meta = {
-  title: "Atoms/BottomSheet",
-  component: BottomSheet,
+  title: "Atoms/BottomSheetLayout",
+  component: BottomSheetLayout,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof BottomSheet>;
+} satisfies Meta<typeof BottomSheetLayout>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

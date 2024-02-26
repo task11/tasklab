@@ -1,6 +1,6 @@
 import Button from "./Button/Button";
 import Badge from "./Badge/Badge";
-import BottomSheet from "./BottomSheet/BottomSheet";
+import BottomSheetLayout from "./BottomSheetLayout/BottomSheetLayout";
 import Card from "./Card/Card";
 import FooterLayout from "./FooterLayout/FooterLayout";
 import HeaderLayout from "./HeaderLayout/HeaderLayout";
@@ -13,7 +13,7 @@ import IconWrapper from "./IconWrapper/IconWrapper";
 export default {
   Button,
   Badge,
-  BottomSheet,
+  BottomSheetLayout,
   Card,
   FooterLayout,
   HeaderLayout,
