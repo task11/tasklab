@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Header from "../components/atoms/Header/Header";
+import FooterLayout from "../components/atoms/FooterLayout/FooterLayout";
 
 const meta = {
-  title: "Atoms/Header",
-  component: Header,
+  title: "Atoms/FooterLayout",
+  component: FooterLayout,
   parameters: {
     layout: "centered",
   },
@@ -12,7 +12,7 @@ const meta = {
   argTypes: {
     children: { control: "name" },
   },
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof FooterLayout>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -20,13 +20,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     variant: "default",
-    children: ``,
-  },
-};
-
-export const Primary: Story = {
-  args: {
-    variant: "primary",
     children: ``,
   },
 };
