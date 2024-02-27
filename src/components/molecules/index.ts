@@ -3,6 +3,11 @@ import GoogleLogin from "./GoogleLogin";
 import FacebookLogin from "./FacebookLogin";
 import GithubLogin from "./GithubLogin";
 import NavItem from "./NavItem";
+import FilteredSheet from "./FilteredSheet";
+import UnderlineLetter from "./UnderlineLetter";
+import RoutineCard from "./RoutineCard";
+import MakeRoutine from "./MakeRoutine";
+import DayBadge from "./DayBadge";
 
 export default {
   KakaoLogin,
@@ -10,4 +15,9 @@ export default {
   FacebookLogin,
   GithubLogin,
   NavItem,
+  FilteredSheet,
+  UnderlineLetter,
+  RoutineCard,
+  MakeRoutine,
+  DayBadge,
 };

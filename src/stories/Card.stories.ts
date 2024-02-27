@@ -30,3 +30,10 @@ export const Disabled: Story = {
     children: ``,
   },
 };
+
+export const Sekeleton: Story = {
+  args: {
+    variant: "skeleton",
+    children: ``,
+  },
+};

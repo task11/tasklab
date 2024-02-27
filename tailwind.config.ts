@@ -41,6 +41,12 @@ const config: Config = {
           },
         ],
       },
+      padding: {
+        "58px": "58px",
+      },
+      borderWidth: {
+        "1px": "1px",
+      },
       width: {
         "12px": "12px",
         "20px": "20px",
