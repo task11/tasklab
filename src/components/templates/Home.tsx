@@ -5,7 +5,7 @@ export default function Home() {
     <div className="relative w-full h-screen py-58px bg-primary_100">
       <Organism.Header />
       <section className="flex flex-col justify-between w-full h-full">
-        <section className="w-full">
+        <section className="w-full h-full flex items-center justify-center">
           <Organism.DayList />
         </section>
         <section className="w-full">

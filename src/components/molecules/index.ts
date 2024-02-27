@@ -7,6 +7,7 @@ import FilteredSheet from "./FilteredSheet";
 import UnderlineLetter from "./UnderlineLetter";
 import RoutineCard from "./RoutineCard";
 import MakeRoutine from "./MakeRoutine";
+import DayBadge from "./DayBadge";
 
 export default {
   KakaoLogin,
@@ -18,4 +19,5 @@ export default {
   UnderlineLetter,
   RoutineCard,
   MakeRoutine,
+  DayBadge,
 };

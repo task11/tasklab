@@ -1,0 +1,12 @@
+export const convertDateFormat = (date: Date) => {
+  const year = date.getFullYear();
+  const month = ("0" + (date.getMonth() + 1)).slice(-2);
+  const day = ("0" + date.getDate()).slice(-2);
+  return `${year}-${month}-${day}`;
+};
+
+export const getDayOfWeek = (date: Date) => {
+  const WEEK = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+  return WEEK[date.getDay()];
+};
