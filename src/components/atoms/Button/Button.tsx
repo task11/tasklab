@@ -2,9 +2,16 @@ import { SIZES } from "./Button.size";
 import { VARIANTS } from "./Button.variant";
 
 type Props = {
-  size?: "sm" | "md" | "lg" | "full";
-  variant?: "default" | "accent" | "error" | "warning";
-  label: string;
+  size?: "sm" | "md" | "lg";
+  variant?:
+    | "default"
+    | "primary"
+    | "accent"
+    | "kakao"
+    | "google"
+    | "facebook"
+    | "github";
+  children: React.ReactNode;
   name?: string;
   onClick?: () => void;
   disabled?: boolean;
@@ -13,7 +20,7 @@ type Props = {
 export default function Button({
   size = "md",
   variant = "default",
-  label,
+  children,
   name = "",
   ...rest
 }: Props) {
@@ -24,10 +31,10 @@ export default function Button({
     <button
       type="button"
       name={name}
-      className={`${sizeStyle} ${variantStyle} text-lg font-bold rounded-lg disabled:opacity-50`}
+      className={`${sizeStyle} ${variantStyle} rounded-lg disabled:opacity-50`}
       {...rest}
     >
-      {label}
+      {children}
     </button>
   );
 }

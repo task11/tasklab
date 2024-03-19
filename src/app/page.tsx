@@ -1,8 +1,11 @@
-export default function Home() {
-  return (
-    <div className=" flex-row justify-center gap-6">
-      <span className=" ">메인</span>
-      <span>메인2</span>
-    </div>
-  );
+"use client";
+
+import Template from "@/components/templates";
+
+import WithAuth from "@/utils/auth/WithAuth";
+
+function Home() {
+  return <Template.Home />;
 }
+
+export default WithAuth(Home);
