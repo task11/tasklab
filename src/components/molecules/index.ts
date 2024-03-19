@@ -8,6 +8,7 @@ import UnderlineLetter from "./UnderlineLetter";
 import RoutineCard from "./RoutineCard";
 import MakeRoutine from "./MakeRoutine";
 import DayBadge from "./DayBadge";
+import RoutineConfirmCard from "./RoutineConfirmCard";
 
 export default {
   KakaoLogin,
@@ -20,4 +21,5 @@ export default {
   RoutineCard,
   MakeRoutine,
   DayBadge,
+  RoutineConfirmCard,
 };
