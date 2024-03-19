@@ -47,6 +47,11 @@ const config: Config = {
       borderWidth: {
         "1px": "1px",
       },
+      flex: {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+      },
       width: {
         "12px": "12px",
         "20px": "20px",
@@ -74,6 +79,11 @@ const config: Config = {
         "60px": "60px",
         "80px": "80px",
         "100px": "100px",
+        "230px": "230px",
+        "635px": "635px",
+      },
+      maxHeight: {
+        "435px": "435px",
         "635px": "635px",
       },
       borderRadius: {
@@ -102,6 +112,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
 export default config;
