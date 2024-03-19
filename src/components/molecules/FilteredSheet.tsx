@@ -8,9 +8,11 @@ interface Props {
   left: React.ReactNode;
   right: React.ReactNode;
   isLeftActive: boolean;
+  variant: "md" | "lg";
 }
 
 export default function FilteredSheet({
+  variant,
   leftLabel,
   rightLabel,
   left,
@@ -21,7 +23,7 @@ export default function FilteredSheet({
     setIsLeftSheetActive(isActive);
   };
   return (
-    <Atom.BottomSheetLayout>
+    <Atom.BottomSheetLayout variant={variant}>
       <div className="flex w-full sticky z-50 bg-white top-0">
         <Molecule.UnderlineLetter
           label={leftLabel}
