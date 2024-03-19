@@ -100,6 +100,7 @@ export default function BottomSheet() {
 
   return (
     <Molecule.FilteredSheet
+      variant="lg"
       leftLabel="데일리"
       rightLabel="투데이"
       left={<Organism.CardList cardList={MOCK_Daily_Card_List} />}
